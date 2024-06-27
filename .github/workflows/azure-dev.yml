@@ -4,8 +4,7 @@ on:
     # Run when commits are pushed to mainline branch (main or master)
     # Set this to the mainline branch you are using
     branches:
-      - main
-      - demo   
+      - main  
     paths-ignore:
       - 'README.md'
       - 'CHEATSHEET.md'    
@@ -14,6 +13,12 @@ on:
 permissions:
   id-token: write
   contents: read
+
+variables:
+  # Define the additional variables or secrets that are required globally (provision and deploy)
+  # ADDITIONAL_VARIABLE_PLACEHOLDER: 'value'
+  # ADDITIONAL_SECRET_PLACEHOLDER: ${{ secrets.ADDITIONAL_SECRET_PLACEHOLDER }}
+  SLN_PATH: 'Samples/Sample_Aspire_Container_Redis'
 
 jobs:
   build:
@@ -73,11 +78,14 @@ jobs:
 
       - name: Restore        
         run: |
+          cd ${{ vars.SLN_PATH }}
           dotnet workload restore
         shell: pwsh
 
       - name: Provision Infrastructure
-        run: azd provision --no-prompt
+        run: |
+          cd ${{ vars.SLN_PATH }}
+          azd provision --no-prompt
         env:
            # uncomment this if you are using infrastructure parameters
           AZD_INITIAL_ENVIRONMENT_CONFIG: ${{ secrets.AZD_INITIAL_ENVIRONMENT_CONFIG }}
@@ -86,7 +94,9 @@ jobs:
          #  ADDITIONAL_SECRET_PLACEHOLDER: ${{ secrets.ADDITIONAL_SECRET_PLACEHOLDER }}
 
       - name: Deploy Application
-        run: azd deploy --no-prompt
+        run: |
+          cd ${{ vars.SLN_PATH }}
+          azd deploy --no-prompt
         # env:
         #  ## Define the additional variables or secrets that are required only for deploy
         #  #  ADDITIONAL_VARIABLE_PLACEHOLDER: ${{ variables.ADDITIONAL_VARIABLE_PLACEHOLDER }}
