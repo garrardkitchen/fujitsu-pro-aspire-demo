@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample_Aspire_Run_NodeJs_App.ServiceDefaults\Sample_Aspire_Run_NodeJs_App.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,46 @@
+﻿@page "/weather"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject BlobApiClient BlobApi
+
+<PageTitle>Blobs</PageTitle>
+
+<h1>Blobs</h1>
+
+<p>This component demonstrates showing data loaded from a backend API service.</p>
+
+@if (blobs == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var blob in @blobs)
+            {
+                <tr>                  
+                    <td>@blob</td>
+                    <td>-</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private string[]? blobs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        blobs = await BlobApi.GetBlobs();
+    }
+}

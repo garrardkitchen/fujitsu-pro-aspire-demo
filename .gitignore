@@ -1,0 +1,7 @@
+*.dll
+.vs/
+obj/
+bin/
+.azure
+node_modules/
+.vscode/

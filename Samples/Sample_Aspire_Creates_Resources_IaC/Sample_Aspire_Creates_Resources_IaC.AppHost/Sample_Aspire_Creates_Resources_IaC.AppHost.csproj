@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>339b3eb5-fe90-4894-a79f-200e7b4b00d5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample_Aspire_Creates_Resources_IaC.ApiService\Sample_Aspire_Creates_Resources_IaC.ApiService.csproj" />
+    <ProjectReference Include="..\Sample_Aspire_Creates_Resources_IaC.Web\Sample_Aspire_Creates_Resources_IaC.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.Azure" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="resources\storage.bicep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
