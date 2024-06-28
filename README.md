@@ -45,6 +45,12 @@ _The primary focus of this repository is on_:
 > [!Note]
 > However, it would not be fair if there were no guidance on how to take your cloud-native solution and deploy it to the Azure cloud platform.
 
+> [!IMPORTANT]
+> _Figure showing (a) .NET Aspire driving development and debugging applications, and provisioning of Azure resources (b) deploying of applications using the AZD CLI, irrespective of being in the Inner or Outer loop, providing a consistent experience._
+> ![alt text](docs/view.png)
+
+
+
 **Not covered**:
 
 - DAPR (Distributed Application Runtime)
