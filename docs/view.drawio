@@ -115,7 +115,7 @@
                 <mxCell id="25" value="Container" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Docker.svg;labelBackgroundColor=none;fontColor=#000000;fillColor=#003366;fontStyle=1" vertex="1" parent="1">
                     <mxGeometry x="-43" y="556" width="50" height="41" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="web/app" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;labelBackgroundColor=none;fontColor=#000000;fillColor=#003366;fontStyle=1" vertex="1" parent="1">
+                <mxCell id="26" value="web/api" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;labelBackgroundColor=none;fontColor=#000000;fillColor=#003366;fontStyle=1" vertex="1" parent="1">
                     <mxGeometry x="-105" y="340.26" width="51" height="40.8" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="NodeJS app" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.android;fillColor=#8CC64F;gradientColor=none;labelBackgroundColor=none;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
