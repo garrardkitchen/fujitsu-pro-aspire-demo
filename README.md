@@ -194,9 +194,9 @@ _Show common cloud-native coding scenarios that would ordinarily force you outsi
 - [.NET Aspire creates resource](Samples/Sample_Aspire_Creates_Resources/README.md) (local provisioning)
 - [You create resource](Samples/Sample_Aspire_Creates_Resources_IaC/README.md) (custom bicep templates)
 - [You use existing resource](Samples/Sample_Aspire_Using_Existing_Resources/README.md) (connection string and MSI)
-- [Running a NodeJS app](Samples/Sample_Aspire_Run_NodeJs_App/README.md) (structured logs)
+- [Running a NodeJS app](Samples/Sample_Aspire_Run_NodeJs_App/README.md) (using a different runtime)
 - [How to use containers](Samples/Sample_Aspire_Container_Redis/README.md) (redis output and distributed caching)
-- [How to use a custom container](Samples/Sample_Aspire_Custom_Container/README.md)
+- [How to use a custom container](Samples/Sample_Aspire_Custom_Container/README.md) (using your own image and not one provided by .NET Aspire)
 
 
 # Outer Loop
