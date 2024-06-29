@@ -45,13 +45,6 @@ _The primary focus of this repository is on_:
 > [!Note]
 > However, it would not be fair if there were no guidance on how to take your cloud-native solution and deploy it to the Azure cloud platform.
 
-> [!IMPORTANT]
-> _Figure showing (a) .NET Aspire driving the development and debugging of applications, and the provisioning of Azure resources, and (b) the deploying of applications using the AZD CLI, irrespective of being in the Inner or Outer loop, ensuring a consistent tooling experience._
-
-![alt text](docs/view.png)
-
-
-
 **Not covered**:
 
 - DAPR (Distributed Application Runtime)
@@ -77,6 +70,17 @@ _The primary focus of this repository is on_:
   The Azure Developer CLI (azd) is an open-source tool that accelerates the transition from local development environments to Azure by providing developer-friendly commands for key stages in the workflow, including code, build, deploy, and monitoring.
   
   - [Awesome AZD template site](https://azure.github.io/awesome-azd/)
+
+---
+
+# Tooling
+
+_This highlights the utilization of both .NET Aspire and AZD during the development and deployment stages. Excluding automated testing, from a developers perspective, this is all the tooling you need to confidently develop, monitor, debug and deploy a modern distributed cloud-native solution._
+
+> [!IMPORTANT]
+> _Figure showing (a) .NET Aspire driving the development and debugging of applications, and the provisioning of Azure resources, and (b) the deploying of applications using the AZD CLI, irrespective of being in the Inner or Outer loop, ensuring a consistent tooling experience._
+
+![alt text](docs/view.png)
 
 ---
 
