@@ -9,6 +9,7 @@ This code repository has been created as a suppliment to the Professions lunch a
 - [Prerequisities](#prerequisities)
 - [Focus](#focus)
 - [Definitions](#definitions)
+- [Tooling](#tooling)
 - [Inner Loop](#inner-loop)
   - [Why it matters](#why-it-matters)
   - [Benefits](#benefits)
