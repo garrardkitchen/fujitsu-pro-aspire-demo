@@ -21,4 +21,4 @@ builder.AddProject<Projects.Sample_Aspire_Container_Redis_Web>("webfrontend")
 
 #endregion
 
-builder.Build().Run();
+await builder.Build().RunAsync();
